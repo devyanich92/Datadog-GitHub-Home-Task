@@ -57,7 +57,7 @@ Adding Tags in the Agent-Configuration File:
 
 For adding tags in the Agent config file, I read through the references provided and discovered the “Guide to Tagging” documentation.
 
-ADD PIC 10 HERE
+<img width="807" alt="10" src="https://cloud.githubusercontent.com/assets/28378176/26140992/f29768e0-3b1c-11e7-9192-880640f04072.png">
 
 Browsing through – I found “Adding tags using the Configuration File”. However, every time I clicked on adding tags it would direct me back to the installation step.
 
@@ -69,4 +69,21 @@ I downloaded MongoDB – simply googled “mongoDB install Mac” and got the li
 
 I tried installing the Xcode from Appstore, and then tried manually running the Xcode for installation.
 
+<img width="727" alt="11" src="https://cloud.githubusercontent.com/assets/28378176/26140988/f1e9e986-3b1c-11e7-862e-3805542d2361.png">
+
+After several failed attempts to install Xcode/homebrew and mongoDB, I decided to give it a shot manually, and IT WORKED!
+
+<img width="877" alt="12" src="https://cloud.githubusercontent.com/assets/28378176/26140984/f19970c8-3b1c-11e7-8a0d-a36aa1283cf1.png">
+
+While doing the manual installation I also decided to change the user from “Datadog” to “Devyani” – for a little personal touch.
+
+<img width="632" alt="13" src="https://cloud.githubusercontent.com/assets/28378176/26140987/f1e8ae18-3b1c-11e7-92a4-ac61217391f3.png">
+
+Further following the instructions, I went onto the Integrations Tab on Datadog-web app and installed MongoDB begin configuration for the same. This is where I changed the User and followed the steps to configure the MongoDB Integration with Datadog-agent.
+
+<img width="1172" alt="14" src="https://cloud.githubusercontent.com/assets/28378176/26140985/f1e78b82-3b1c-11e7-8c0e-dd1793eb6b8d.png">
+
+<img width="900" alt="15" src="https://cloud.githubusercontent.com/assets/28378176/26140986/f1e7b490-3b1c-11e7-9453-69fc63370a85.png">
+
+I did realize while doing the manual configuration – that since I had changed the “user” from “Datadog” to “Devyani” I will have to change it in the Mongo.yaml file as well.
 
