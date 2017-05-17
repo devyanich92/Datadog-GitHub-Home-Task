@@ -125,4 +125,51 @@ Found the settings button in the upper right hand corner of the integration dash
 
 This is where I selected Edit Dashboard, and added the metric – test.support.random to report at the dashboard.
 
+<img width="1009" alt="23" src="https://cloud.githubusercontent.com/assets/28378176/26141434/233f83e0-3b1f-11e7-8718-956dd5ae8010.png">
+
+What is the difference between a timeboard and a screenboard?
+
+Timeboard: for a timegraph, all the graphs are scoped within the same time and appear in a grid-like fashion. A timegraph has utility for correlation of data and troubleshooting.
+
+Screenboard: screenboard as the name suggests is great for getting a high level look into the functioning of the system. It is much more flexible and customizable. The widgets may have different time frames.
+
+The Above dashboard is a screenboard.
+
+After this I attempted to get notifications of the metric but could not get the Datadog-web app to send the snapshot through.
+
+<img width="913" alt="24" src="https://cloud.githubusercontent.com/assets/28378176/26141435/23401cc4-3b1f-11e7-945e-29d0290c6424.png">
+
+Level 3: Alerting the Data
+
+I selected the ‘Monitors’ drop down menu and selected the option ‘New Monitor’. Then I selected the second option – Metric and continued to define the metric ‘test.support.random’ to match the requirements of the Datadog GitHub Task.
+
+I set the threshold at 0.9 and warning threshold at 0.7. I also selected Multi Alerts via hosts.
+The reason I had set both the threshold at 0.9 and the warning threshold at 0.7 was – I had lost a lot of time being in India and had only a couple of days left before my trial account expired, I assumed setting these value will give me a fair amount of notifications.
+
+<img width="1249" alt="25" src="https://cloud.githubusercontent.com/assets/28378176/26141432/230197f6-3b1f-11e7-9066-78374572d62c.png">
+
+Finally, I created email notifications by selecting my own name/email in the ‘Notify your team’ section and then received the following emails. 
+
+<img width="1280" alt="26" src="https://cloud.githubusercontent.com/assets/28378176/26141436/23404956-3b1f-11e7-8576-b6f00b2d9ee1.png">
+<img width="787" alt="27" src="https://cloud.githubusercontent.com/assets/28378176/26141438/23448d0e-3b1f-11e7-8522-ed0eb892b1ff.png">
+<img width="968" alt="28" src="https://cloud.githubusercontent.com/assets/28378176/26141433/233f0ef6-3b1f-11e7-9807-4519a95d03da.png">
+<img width="994" alt="29" src="https://cloud.githubusercontent.com/assets/28378176/26141437/23418668-3b1f-11e7-8d61-d382697e3297.png">
+
+Downtime Bonus: Opened the ‘Monitors’ drop down menu and selected ‘Manage Downtime’. On the page that appeared, I selected ‘Schedule Downtime’.
+
+<img width="1271" alt="30" src="https://cloud.githubusercontent.com/assets/28378176/26141430/22b2632a-3b1f-11e7-8d1c-ad0e9ef3fceb.png">
+
+## Conclusion:
+
+I’m really grateful for getting this opportunity & I thoroughly enjoyed becoming familiar with the Datadog software and also expanding my knowledge of command line tools and databases (MongoDB – since I had never used it before). 
+
+This is my attempt at explaining whatever I did for the task, I’m really grateful for all the references that were provided and yes I did look up on web for a whole lot of things... but I think it reflects on my habit of trying to do things perfectly and with a 100% dedication. It also reflects on my nature – being curious I had explored and learnt a lot more than I expected to.
+
+I hope that my approach of solving the task and not giving up is something that I can contribute with at Datadog’s Support engineering role in Sydney.
+
+
+
+
+
+
 
