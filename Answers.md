@@ -171,5 +171,3 @@ I hope that my approach of solving the task and not giving up is something that 
 
 
 
-
-
