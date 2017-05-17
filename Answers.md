@@ -17,3 +17,10 @@ After installing both VirtualBox and Vagrant and running the commands in termina
 
 <img width="1276" alt="1" src="https://cloud.githubusercontent.com/assets/28378176/26140373/b7fe79c4-3b19-11e7-842d-d5e86755d4ba.png">
 
+<img width="835" alt="2" src="https://cloud.githubusercontent.com/assets/28378176/26140535/c67318d8-3b1a-11e7-8032-fe711f76cabb.png">
+
+It took a lot of trial-and-error to get the VirtualBox correctly working.
+
+A few errors that I encountered on my way to get Vagrant and VirtualBox working are shown as below:
+
+
