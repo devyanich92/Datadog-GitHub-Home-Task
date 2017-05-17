@@ -87,3 +87,42 @@ Further following the instructions, I went onto the Integrations Tab on Datadog-
 
 I did realize while doing the manual configuration – that since I had changed the “user” from “Datadog” to “Devyani” I will have to change it in the Mongo.yaml file as well.
 
+<img width="784" alt="16" src="https://cloud.githubusercontent.com/assets/28378176/26141266/48646830-3b1e-11e7-8615-f8cb08a89460.png">
+
+This is where I found out how to Add tags via Config file. I added area and database tags for testing and hopefully it is correct.
+
+<img width="1272" alt="17" src="https://cloud.githubusercontent.com/assets/28378176/26141260/481a246e-3b1e-11e7-8a46-126e0fcbdd1e.png">
+
+Once I got it working and installed properly I ran ‘Datadog-agent info’ to verify mongo was up and running. 
+
+However, instance #0 was not running properly due to the local host either being incorrect or due to me not having permission rights to access the local host of 27016 (found a couple of references on Datadog—GitHub stating that one instance running would be sufficient for the time being.)
+
+<img width="981" alt="18" src="https://cloud.githubusercontent.com/assets/28378176/26141263/481b65a4-3b1e-11e7-84ff-503da8503326.png">
+
+Write a Custom -- AgentCheck
+
+Read the provided reference –thoroughly “Writing an Agent Check”.
+
+I found the code “your first check” and renamed it to “test.support.random” and formed 2 files with the extensions .py and .yaml.
+
+The location of the .py and .yaml file that I created is shown below. I did edit the code in .py file. Added an ‘import random’ line as the first line of code. Changed the ‘class HelloCheck’ to ‘class RandomCheck’ and edited ‘hello.world’ to ‘test.support.random’.
+
+I had also kept the value for self.gauge as 1, but then later changed it to random.random() to import a random metric rather than with a constant value.
+
+I did not edit the .yaml file.
+
+<img width="710" alt="19" src="https://cloud.githubusercontent.com/assets/28378176/26141261/481aa33a-3b1e-11e7-9532-5c64fdf58d31.png">
+<img width="659" alt="20" src="https://cloud.githubusercontent.com/assets/28378176/26141265/481f084e-3b1e-11e7-9c98-04bf86422425.png">
+<img width="1263" alt="21" src="https://cloud.githubusercontent.com/assets/28378176/26141264/481bb5cc-3b1e-11e7-931b-6dfd137fb231.png">
+
+Level 2: Visualizing the Data
+
+For visualising the data – I selected ‘Dashboards’ and then ‘Dashboard List’ in the drop down menu. Found the ‘Integration Dashboards’ list and selected the proper integration dashboard (MongoDB here) shown below.
+
+<img width="1275" alt="22" src="https://cloud.githubusercontent.com/assets/28378176/26141262/481b1cde-3b1e-11e7-85df-a22acdf475d4.png">
+
+Found the settings button in the upper right hand corner of the integration dashboard, and selected ‘Clone Dashboard’ (shown below). Named the dashboard ‘Clone-Mongo’.
+
+This is where I selected Edit Dashboard, and added the metric – test.support.random to report at the dashboard.
+
+
