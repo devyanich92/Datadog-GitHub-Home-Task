@@ -39,4 +39,34 @@ Followed the instructions for Agent-installation for Mac OS X as shown below.
 
 After copy pasting the above mentioned code in my terminal and getting numerous “API key invalid” messages, I got curious and decided to change the API key manually as instructed.
 
+<img width="1000" alt="6" src="https://cloud.githubusercontent.com/assets/28378176/26140797/1ba7ba88-3b1c-11e7-8642-f34a3d5a9167.png">
+
+This worked well, and I finally had the DD-agent up and running!
+
+<img width="1276" alt="7" src="https://cloud.githubusercontent.com/assets/28378176/26140820/3b48330e-3b1c-11e7-859d-abe4a0025304.png">
+
+What is the Agent?
+
+An agent is the software responsible for collecting and delivering the Metrics and Events from the machine (it’s installed on) to Datadog. An Agent has: the collector, dogstatd, and the forwarder as shown below:
+
+<img width="780" alt="8" src="https://cloud.githubusercontent.com/assets/28378176/26140848/588b702a-3b1c-11e7-9eb1-b688d9187d65.png">
+
+<img width="904" alt="9" src="https://cloud.githubusercontent.com/assets/28378176/26140849/58fbbd30-3b1c-11e7-85f8-471f1d6cc17c.png">
+
+Adding Tags in the Agent-Configuration File:
+
+For adding tags in the Agent config file, I read through the references provided and discovered the “Guide to Tagging” documentation.
+
+ADD PIC 10 HERE
+
+Browsing through – I found “Adding tags using the Configuration File”. However, every time I clicked on adding tags it would direct me back to the installation step.
+
+Changing my course of thinking: I decided to read through more references and find out more about Adding tags via config files.
+
+One of the references suggested to install the database before adding Tags, it did make sense to me and hence I thought I’d give it a go.
+
+I downloaded MongoDB – simply googled “mongoDB install Mac” and got the link to their official website. After the download I realised that I did have Homebrew package already installed but on running “brew update” it would just give me the error message stating “command not found”.
+
+I tried installing the Xcode from Appstore, and then tried manually running the Xcode for installation.
+
 
